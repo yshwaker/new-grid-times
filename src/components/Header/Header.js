@@ -90,16 +90,21 @@ const SubscribeGroup = styled.div`
   display: none;
 
   @media ${QUERIES.desktopAndUp} {
-    display: flex;
+    position: relative;
+    display: revert;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
     justify-self: end;
-    align-self: end;
-    gap: 8px;
+    /* gap: 8px; */
   }
 `
 
 const SubscribeLink = styled.a`
+  position: absolute;
+  width: 100%;
+  margin-top: 8px;
+  text-align: center;
   text-decoration: underline;
   font-family: var(--font-family-serif);
   font-style: italic;
@@ -114,11 +119,18 @@ const MainHeader = styled(MaxWidthWrapper)`
   margin-top: 32px;
   margin-bottom: 48px;
 
+  @media ${QUERIES.tabletAndUp} {
+    margin-top: 48px;
+    margin-bottom: 72px;
+  }
+
   @media ${QUERIES.desktopAndUp} {
     display: grid;
     align-items: center;
     justify-content: revert;
     grid-template-columns: 1fr auto 1fr;
+    margin-top: 16px;
+    margin-bottom: 72px;
   }
 `
 
