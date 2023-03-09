@@ -30,6 +30,14 @@ const Wrapper = styled.article`
       'abstract';
     grid-template-columns: 1fr;
   }
+
+  /* @container (max-width: 300px) {
+    grid-template-areas:
+      'image'
+      'heading'
+      'abstract';
+    grid-template-columns: 1fr;
+  } */
 `
 
 const Image = styled.img`
