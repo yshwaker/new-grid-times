@@ -1,17 +1,13 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 
-import {
-  MAIN_STORY,
-  OPINION_STORIES,
-  SECONDARY_STORIES,
-} from '../../data';
+import { MAIN_STORY, OPINION_STORIES, SECONDARY_STORIES } from '../../data'
 
-import SectionTitle from '../SectionTitle';
+import Advertisement from '../Advertisement'
 import MainStory from '../MainStory';
+import OpinionStory from '../OpinionStory'
 import SecondaryStory from '../SecondaryStory';
-import OpinionStory from '../OpinionStory';
-import Advertisement from '../Advertisement';
+import SectionTitle from '../SectionTitle'
 
 const MainStoryGrid = () => {
   return (
@@ -61,7 +57,7 @@ const MainStorySection = styled.section`
 
 const SecondaryStorySection = styled.section`
   grid-area: secondary-stories;
-`;
+`
 
 const StoryList = styled.div`
   display: flex;
