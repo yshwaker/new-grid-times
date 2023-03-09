@@ -3,24 +3,15 @@ import styled from 'styled-components/macro';
 
 const SecondaryStory = ({ id, title, image, location, abstract }) => {
   return (
-    <LinkWrapper href={`/story/${id}`}>
+    <a href={`/story/${id}`}>
       <Wrapper>
         <Image alt={image.alt} src={image.src} />
         <Heading>{title}</Heading>
         <Abstract>{abstract}</Abstract>
       </Wrapper>
-    </LinkWrapper>
+    </a>
   )
 }
-
-const LinkWrapper = styled.a`
-  padding-top: 16px;
-  padding-bottom: 16px;
-
-  &:not(:last-of-type) {
-    border-bottom: 1px solid var(--color-gray-300);
-  }
-`
 
 const Wrapper = styled.article`
   display: grid;
